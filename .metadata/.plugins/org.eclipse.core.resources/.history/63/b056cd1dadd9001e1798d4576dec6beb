@@ -1,0 +1,17 @@
+package com.je.exception;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalControllerAdvise {
+	
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public void handleException(ResourceNotFoundException ex) {
+		
+	}
+	@ExceptionHandler(Exception.class)
+   public void handleException(Exception ex) {
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.javaexpress;
+
+@Entity
+@Setter
+@Getter
+@NoArgC
+public class Product {
+
+}

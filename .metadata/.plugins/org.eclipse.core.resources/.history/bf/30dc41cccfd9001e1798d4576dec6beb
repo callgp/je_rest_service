@@ -1,0 +1,14 @@
+package com.je.exception;
+
+import java.time.LocalDateTime;
+
+public class ErrorAPI {
+	
+	private Integer statusCode;
+	
+	private String title;
+	private String status;
+	private String details;
+	private LocalDateTime localDateTime;
+
+}

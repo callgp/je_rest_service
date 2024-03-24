@@ -1,0 +1,12 @@
+package com.je.exception;
+
+public class ErrorAPI {
+	
+	private Integer statusCode;
+	
+	private String title;
+	private String status;
+	private String details;
+	private LocalDateTime localDateTime;
+
+}

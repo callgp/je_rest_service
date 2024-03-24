@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    password: admin
+    url: jdbc:h2:mem:testdatabase
+    username: je
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8077

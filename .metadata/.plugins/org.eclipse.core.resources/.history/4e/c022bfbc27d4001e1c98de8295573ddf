@@ -1,0 +1,9 @@
+package com.je;
+
+@Entit
+@Setter
+@Getter
+@NoArgC
+public class Product {
+
+}

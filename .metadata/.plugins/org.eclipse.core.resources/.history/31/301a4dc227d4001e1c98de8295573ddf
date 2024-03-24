@@ -1,0 +1,12 @@
+package com.je;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Setter
+@Getter
+@NoArgC
+public class Product {
+
+}

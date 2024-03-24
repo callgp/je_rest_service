@@ -1,0 +1,5 @@
+package com.je.entities;
+
+public enum ProductStatus {
+
+}

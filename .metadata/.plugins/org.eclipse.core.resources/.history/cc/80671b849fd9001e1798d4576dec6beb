@@ -1,0 +1,5 @@
+package com.je.exception;
+
+public class ResourceNotFoundException {
+
+}

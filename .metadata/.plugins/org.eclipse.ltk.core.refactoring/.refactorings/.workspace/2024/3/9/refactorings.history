@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;08-JE-SB-rest-api-get-put-delete-hw-statuscode-final&apos; to &apos;08-JE-SB-rest-api-get-put-delete-hw-statuscode-swagger-final&apos;&#x0D;&#x0A;- Original element: &apos;08-JE-SB-rest-api-get-put-delete-hw-statuscode-final&apos;&#x0D;&#x0A;- Renamed element: &apos;08-JE-SB-rest-api-get-put-delete-hw-statuscode-final&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;08-JE-SB-rest-api-get-put-delete-hw-statuscode-final&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=08-JE-SB-rest-api-get-put-delete-hw-statuscode-final" name="08-JE-SB-rest-api-get-put-delete-hw-statuscode-swagger-final" references="true" stamp="1709305054127" version="1.0"/>
+</session>

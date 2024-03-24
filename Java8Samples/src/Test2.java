@@ -1,0 +1,40 @@
+   //@FunctionalInterface
+
+  interface FunctionInterfacesFourCases20 {
+
+   public void m1();
+
+   }
+
+
+
+	/*
+	 * public Demo implemments FunctionInterfacesFourCases1{
+	 * 
+	 * public void m1() {
+	 * 
+	 * System.out.println("normal impl");
+	 * 
+	 * }
+	 * 
+	 * }
+	 */
+
+
+ public  class Test2{
+
+      
+
+      public static void main(String[] args) {
+
+         {
+
+            FunctionInterfacesFourCases20 i= ()-> System.out.println("lamda implementaion");
+            i.m1();
+
+         }
+
+      }
+
+   }
+

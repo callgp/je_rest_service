@@ -1,0 +1,24 @@
+package com.je.exception;
+
+import java.time.LocalDateTime;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalControllerAdvise {
+	
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public void handleException(ResourceNotFoundException ex) {
+		var errorApi=new ErrorAPI();
+		errorApi.setStatusCode(HttpStatus.BAD_REQUEST);
+		errorApi.setLocalDateTime(LocalDateTime.now);
+		
+		
+	}
+	@ExceptionHandler(Exception.class)
+   public void handleException(Exception ex) {
+		
+	}
+}

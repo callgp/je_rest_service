@@ -1,0 +1,52 @@
+package com.example;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.models.Category;
+import com.example.service.CategoryService;
+
+@SpringBootApplication
+public class Application implements ApplicationRunner{
+	
+	@Autowired
+	private CategoryService categoryService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+	@Override
+	public void run(ApplicationArguments args) throws Exception {
+		createCategory();
+		//fetchCategory();
+		//updateCategory();
+		//deleteCategory();
+		/*
+		 * Category category=new Category(); category.setName("mobile");
+		 * categoryService.createCategory(category);
+		 */
+	}
+
+	
+	/*
+	 * private void deleteCategory() { categoryService.deleteCategory(1); }
+	 * 
+	 * private void updateCategory() { Category inputCategory = new Category();
+	 * inputCategory.setName("Clothes_Modified"); categoryService.updateCategory(2,
+	 * inputCategory); }
+	 * 
+	 * private void fetchCategory() { Category dbCategory =
+	 * categoryService.fetchCategory(2);
+	 * System.out.println(dbCategory.getName()+" "+dbCategory.getId()); }
+	 */
+	  
+	  private void createCategory() { Category category = new Category();
+	  category.setName("Clothes"); categoryService.createCategory(category); }
+	 
+	
+
+}

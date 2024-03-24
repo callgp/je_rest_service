@@ -1,0 +1,25 @@
+package com.je.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.UUID;
+
+import org.junit.jupiter.api.Test;
+
+import com.je.Employee;
+
+class EmployeeServiceTest {
+
+	@Test
+	void getEmployeeServiceDetailsTest() {
+		
+		EmployeeService empService=new EmployeeService();
+		Employee emp=new Employee();
+		emp.setName("class to test junit");
+		Employee updatedEmployee=empService.getEmployeeDetails(emp);
+		assertEquals(updatedEmployee.getName(), emp.getName());
+		
+		//fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.je.exception;
+
+import java.time.LocalDateTime;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestControllerAdvice
+public class GlobalControllerAdvise {
+	
+	@ExceptionHandler(ResourceNotFoundException.class)
+	@ResponseStatus(code=HttpStatus.BAD_REQUEST)
+//	public ResponseEntity<ErrorAPI> handleException(ResourceNotFoundException ex) {
+	public ErrorAPI handleException(ResourceNotFoundException ex) {
+		var errorApi=new ErrorAPI();
+		errorApi.setStatus(HttpStatus.BAD_REQUEST.getReasonPhrase());
+		errorApi.setLocalDateTime(LocalDateTime.now());
+		errorApi.setDetails(ex.getMessage());
+		errorApi.setStatusCode(HttpStatus.BAD_REQUEST.value());
+		errorApi.setTitle("client err");
+		//return new ResponseEntity<>(errorApi, HttpStatus.BAD_REQUEST);
+		return errorApi;
+		
+	}
+	@ExceptionHandler(Exception.class)
+   public void handleException(Exception ex) {
+		
+	}
+}
